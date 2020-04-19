@@ -1339,6 +1339,7 @@ class QueryBuilder(object):
 
         if len(results) > 0:
             return dict((k.lower(), v) for k, v in results[0].items())["aggregate"]
+        return 0
 
     def insert(self, _values=None, **values):
         """
